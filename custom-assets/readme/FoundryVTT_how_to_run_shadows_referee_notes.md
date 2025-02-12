@@ -34,25 +34,11 @@ https://foundryvtt.com/api/v12/classes/client.Tile.html ( the inherited update m
 
 NOTE press F12 in FoundryVTT to open the console for debugging as the scripts have console.logs statements. 
 
-
-## TODO list 
-TODO - export the world so it can be upload to the forge to be used in play   
-~~TODO - write up notes on vacc suit damage and penalties~~  
-~~TODO - note on encumbrance ( the CL light vs )~~   
-~~TODO - write up section on atmosphere and damage by exposure   ~~
-~~TODO - macro to randomly open / close doors on seismic tremor on roll of 7+~~ tested and documenttation updated.  
-~~TODO - need to stat up the monsters in Foundry. or add a note that despite selecting CL it seems to use CE SRD stats~~
-~~TODO - finalise the statues on exterior  ~~
-~~TODO - add note that exterior image exported from DD at 140 has then been scaled down by 50 in gimp as a lossy with 90% to reduce file size~~  
-~~TODO - macro for random state of open doors when game starts~~  
-~~TODO - macro to configure token vision when enter / exit the pyramid. done but not required as handled by scene token vision on / off~~   
-~~TODO - tidy up the macros~~  
-mock up a pyramid complex handout image don't use the original 
-
-
-
 # setup game TODO list for the referee
-1. Decide on which Traveller ruleset to use and configure the twodsix module. NOTE actors for both the players and the animals must also be configured to align with the chosen ruleset. for example if using CL where animals have only hits 
+1. Setup a world folder in Foundry and copy in the folder. Install the listed modules through the Foundry UI. configure Foundry core settings > open permission configuration ( for example if players can create / run macros, open doors etc ).
+Delete ( or move outside of world folder ) any unused / unwanted sub folders from custom-assetts. For example, unused tokens, as both male and female were provided for each character. Also the macros folder is not used by Foundry but I have left this folder in as it is easier to read the macros from this directory with a code editor such as visual studio code, vs trying to read the macros in the Foundry UI macro dialog UI editor.   
+
+2. Decide on which Traveller ruleset to use and configure the twodsix module. NOTE actors for both the players and the animals must also be configured to align with the chosen ruleset. for example if using CL where animals have only hits 
 
 ![configure-settings-twodsix-advanced-animals](images/configure-settings-twodsix-advanced-animals.png)
 
@@ -64,24 +50,24 @@ Note when manually setting up animal actors drag both the attack type ( e.g. tee
 
 ![drag-melee-from-compendium](images/drag-melee-from-compendium.png)
 
-2. Assign ownership of the selected actor/s to players and configure each actors token vision settings to None. token vision none also applies to a player that controls 2 or more tokens as player may have 1 token at elevation 0m and another token at elevation 3.5m in the ventilation shafts.
+3. Assign ownership of the selected actor/s to players and configure each actors token vision settings to None. token vision none also applies to a player that controls 2 or more tokens as player may have 1 token at elevation 0m and another token at elevation 3.5m in the ventilation shafts.
 drag and drop and configure the animals as 
 
-3. Using player/s tokens as the referee test out the teleport tiles ( e.g. teleport from lvl0 > lvl1 > lvl1.4 > lvl2 ). Test out the door and light macros.  
+4. Using player/s tokens as the referee test out the teleport tiles ( e.g. teleport from lvl0 > lvl1 > lvl1.4 > lvl2 ). Test out the door and light macros.  
 
-4. Place animals on the scenes for fixed encounters as described in the adventure.pdf. Note animals can be also be set to invisible so that these can be revealed only to players when required. 
+5. Place animals on the scenes for fixed encounters as described in the adventure.pdf. Note animals can be also be set to invisible so that these can be revealed only to players when required. 
 
-5. Using player and animal tokens as the referee run a combat encounter.   
+6. Using player and animal tokens as the referee run a combat encounter.   
 
-6. Place player tokens on lvl0 at the steps to lower platform
+7. Place player tokens on lvl0 at the steps to lower platform
 
-7. Either use the macros or manually configure doors open/close and lights on/off 
+8. Either use the macros or manually configure doors open/close and lights on/off 
 
-8. Add player handouts as journal entries. some examples  
+9. Add player handouts as journal entries. some examples  
 the large images of the animals which can be shown to players when first encountered to assist in describing the animals to the players
 3D artwork / images showing the pyramid complex 
 
-9. optionally setup a landing page 
+10. optionally setup a landing page 
 
 ## Foundry folder structure 
 https://foundryvtt.com/article/media/  
@@ -243,6 +229,8 @@ Logic suggests that anything that is not fixed in place ( think in terms of Old 
 A macro setFlagUsingUIDialog can be used by the referee to set a flag on a door with the key doorProppedOpen ( note case sensitive ) and value, for which any text e.g. 1 , true, can be input, and clicking confirm on the dialog. The flag can be unset / removed by the same macro leaving the value field empty. The door UUID can be copied by clicking on wall controls and then clicking on the door to open the wall dialog and then single click the copy document UUID icon.  
 
 ![set-flag-using-dialog-macro](images/set-flag-using-dialog-macro.png)
+
+NOTE A macro consoleLogSingleTypeObject can be edited using the same UUID as setFlagUsingUIDialog to display the Object in the console ( F12 to display the console ). The objects properties can be inspected ( click the small arrow icon to expand ) and the flag / value that was set should be visible as one of the world flags.   
 
 A macro closeOpenDoorsOnLvl1andLvl2OnRollOf7+ can be used by the referee to simulate the change in door state in the event of a seismic tremor. 
 
