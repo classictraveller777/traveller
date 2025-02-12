@@ -1,0 +1,26 @@
+2025/02/12-12:23:43.812979 7fa2965df640 Recovering log #1000
+2025/02/12-12:23:43.813001 7fa2965df640 Level-0 table #1002: started
+2025/02/12-12:23:43.813853 7fa2965df640 Level-0 table #1002: 1292 bytes OK
+2025/02/12-12:23:43.815641 7fa2965df640 Delete type=3 #998
+2025/02/12-12:23:43.815661 7fa2965df640 Delete type=0 #1000
+2025/02/12-12:24:12.618393 7fa284925640 Level-0 table #1005: started
+2025/02/12-12:24:12.619331 7fa284925640 Level-0 table #1005: 1293 bytes OK
+2025/02/12-12:24:12.621208 7fa284925640 Delete type=0 #1003
+2025/02/12-12:24:12.622484 7fa284925640 Manual compaction at level-0 from '!settings!05WLuqvwaBGOJYhc' @ 72057594037927935 : 1 .. '!settings!zMANbRMkdJZK9oRu' @ 0 : 0; will stop at '!settings!iaYLceVdT0iO0jY4' @ 817 : 1
+2025/02/12-12:24:12.622498 7fa284925640 Compacting 3@0 + 1@1 files
+2025/02/12-12:24:12.623516 7fa284925640 Generated table #1006@0: 4 keys, 1483 bytes
+2025/02/12-12:24:12.623554 7fa284925640 Compacted 3@0 + 1@1 files => 1483 bytes
+2025/02/12-12:24:12.624648 7fa284925640 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/02/12-12:24:12.624824 7fa284925640 Delete type=2 #997
+2025/02/12-12:24:12.624935 7fa284925640 Delete type=2 #999
+2025/02/12-12:24:12.625021 7fa284925640 Delete type=2 #1005
+2025/02/12-12:24:12.625094 7fa284925640 Delete type=2 #1002
+2025/02/12-12:24:12.625285 7fa284925640 Manual compaction at level-0 from '!settings!iaYLceVdT0iO0jY4' @ 817 : 1 .. '!settings!zMANbRMkdJZK9oRu' @ 0 : 0; will stop at (end)
+2025/02/12-12:24:12.625368 7fa284925640 Manual compaction at level-1 from '!settings!05WLuqvwaBGOJYhc' @ 72057594037927935 : 1 .. '!settings!zMANbRMkdJZK9oRu' @ 0 : 0; will stop at '!settings!keYHXAS66vIwKL5V' @ 800 : 1
+2025/02/12-12:24:12.625385 7fa284925640 Compacting 1@1 + 1@2 files
+2025/02/12-12:24:12.627383 7fa284925640 Generated table #1007@1: 154 keys, 18191 bytes
+2025/02/12-12:24:12.627415 7fa284925640 Compacted 1@1 + 1@2 files => 18191 bytes
+2025/02/12-12:24:12.628208 7fa284925640 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/02/12-12:24:12.628295 7fa284925640 Delete type=2 #1006
+2025/02/12-12:24:12.628379 7fa284925640 Delete type=2 #943
+2025/02/12-12:24:12.628451 7fa284925640 Manual compaction at level-1 from '!settings!keYHXAS66vIwKL5V' @ 800 : 1 .. '!settings!zMANbRMkdJZK9oRu' @ 0 : 0; will stop at (end)

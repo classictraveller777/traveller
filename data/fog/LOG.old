@@ -1,0 +1,22 @@
+2025/02/12-12:23:43.751007 7fa294ddc640 Recovering log #914
+2025/02/12-12:23:43.752926 7fa294ddc640 Delete type=0 #914
+2025/02/12-12:23:43.752950 7fa294ddc640 Delete type=3 #912
+2025/02/12-12:24:12.590531 7fa284925640 Level-0 table #918: started
+2025/02/12-12:24:12.590581 7fa284925640 Level-0 table #918: 0 bytes OK
+2025/02/12-12:24:12.591538 7fa284925640 Delete type=0 #916
+2025/02/12-12:24:12.597335 7fa284925640 Manual compaction at level-0 from '!fog!0lYBt6x3RpHS3oLl' @ 72057594037927935 : 1 .. '!fog!xo36PLESriy1E4Ya' @ 0 : 0; will stop at '!fog!e1X5ZqolW1bAy8FX' @ 3044 : 1
+2025/02/12-12:24:12.597355 7fa284925640 Compacting 1@0 + 1@1 files
+2025/02/12-12:24:12.599554 7fa284925640 Generated table #919@0: 5 keys, 66503 bytes
+2025/02/12-12:24:12.599588 7fa284925640 Compacted 1@0 + 1@1 files => 66503 bytes
+2025/02/12-12:24:12.600521 7fa284925640 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/02/12-12:24:12.600700 7fa284925640 Delete type=2 #913
+2025/02/12-12:24:12.600864 7fa284925640 Delete type=2 #911
+2025/02/12-12:24:12.601063 7fa284925640 Manual compaction at level-0 from '!fog!e1X5ZqolW1bAy8FX' @ 3044 : 1 .. '!fog!xo36PLESriy1E4Ya' @ 0 : 0; will stop at (end)
+2025/02/12-12:24:12.605906 7fa284925640 Manual compaction at level-1 from '!fog!0lYBt6x3RpHS3oLl' @ 72057594037927935 : 1 .. '!fog!xo36PLESriy1E4Ya' @ 0 : 0; will stop at '!fog!pWpagl6XHxTmn4gB' @ 3033 : 0
+2025/02/12-12:24:12.605932 7fa284925640 Compacting 1@1 + 1@2 files
+2025/02/12-12:24:12.611454 7fa284925640 Generated table #920@1: 12 keys, 297643 bytes
+2025/02/12-12:24:12.611486 7fa284925640 Compacted 1@1 + 1@2 files => 297643 bytes
+2025/02/12-12:24:12.612307 7fa284925640 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/02/12-12:24:12.612408 7fa284925640 Delete type=2 #919
+2025/02/12-12:24:12.612529 7fa284925640 Delete type=2 #859
+2025/02/12-12:24:12.613748 7fa284925640 Manual compaction at level-1 from '!fog!pWpagl6XHxTmn4gB' @ 3033 : 0 .. '!fog!xo36PLESriy1E4Ya' @ 0 : 0; will stop at (end)

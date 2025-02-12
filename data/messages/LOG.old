@@ -1,0 +1,23 @@
+2025/02/12-12:23:43.734986 7fa295dde640 Recovering log #714
+2025/02/12-12:23:43.737749 7fa295dde640 Delete type=0 #714
+2025/02/12-12:23:43.737799 7fa295dde640 Delete type=3 #712
+2025/02/12-12:24:12.589448 7fa284925640 Level-0 table #718: started
+2025/02/12-12:24:12.589512 7fa284925640 Level-0 table #718: 0 bytes OK
+2025/02/12-12:24:12.590461 7fa284925640 Delete type=0 #716
+2025/02/12-12:24:12.594697 7fa284925640 Manual compaction at level-0 from '!messages!OWHS3tyZO3ccYUcf' @ 72057594037927935 : 1 .. '!messages!QTFrbuMxXSu54b0J' @ 0 : 0; will stop at '!messages!w6pJ9F0BJYoG6a7e' @ 722 : 1
+2025/02/12-12:24:12.594718 7fa284925640 Compacting 3@0 + 0@1 files
+2025/02/12-12:24:12.596141 7fa284925640 Generated table #719@0: 123 keys, 3096 bytes
+2025/02/12-12:24:12.596174 7fa284925640 Compacted 3@0 + 0@1 files => 3096 bytes
+2025/02/12-12:24:12.597001 7fa284925640 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/02/12-12:24:12.597094 7fa284925640 Delete type=2 #713
+2025/02/12-12:24:12.597177 7fa284925640 Delete type=2 #699
+2025/02/12-12:24:12.597262 7fa284925640 Delete type=2 #710
+2025/02/12-12:24:12.601022 7fa284925640 Manual compaction at level-0 from '!messages!w6pJ9F0BJYoG6a7e' @ 722 : 1 .. '!messages!QTFrbuMxXSu54b0J' @ 0 : 0; will stop at (end)
+2025/02/12-12:24:12.601151 7fa284925640 Manual compaction at level-1 from '!messages!OWHS3tyZO3ccYUcf' @ 72057594037927935 : 1 .. '!messages!QTFrbuMxXSu54b0J' @ 0 : 0; will stop at '!messages!z6NMw4lmx1vp86KC' @ 818 : 0
+2025/02/12-12:24:12.601171 7fa284925640 Compacting 1@1 + 1@2 files
+2025/02/12-12:24:12.602817 7fa284925640 Generated table #720@1: 2 keys, 2157 bytes
+2025/02/12-12:24:12.602847 7fa284925640 Compacted 1@1 + 1@2 files => 2157 bytes
+2025/02/12-12:24:12.603895 7fa284925640 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/02/12-12:24:12.604074 7fa284925640 Delete type=2 #667
+2025/02/12-12:24:12.604538 7fa284925640 Delete type=2 #719
+2025/02/12-12:24:12.613705 7fa284925640 Manual compaction at level-1 from '!messages!z6NMw4lmx1vp86KC' @ 818 : 0 .. '!messages!QTFrbuMxXSu54b0J' @ 0 : 0; will stop at (end)
